@@ -7,7 +7,7 @@ const Hero = () => {
     window.open(`${process.env.PUBLIC_URL}/ebookthue.pdf`, "_blank");
 
     // tab hiện tại quay về trang chủ
-    window.location.href = "/";
+    window.location.href = "/so_tay_thue";
   };
   
   return (

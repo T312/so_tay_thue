@@ -1,0 +1,150 @@
+.blog-list {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blog-item {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  // border-radius: 5px;
+  overflow: hidden;
+  // box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  // transition: transform 0.3s;
+  gap: 20px;
+  border: 1px solid #e5e7eb; // viền xám nhạt
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  &:hover {
+    transform: translateY(-4px);
+  }
+ 
+
+  .blog-thumb {
+    width: 320px;
+    height: auto;       // 👈 cho ảnh co chiều cao theo tỉ lệ
+    max-height: 235px;  // 👈 giới hạn chiều cao (tuỳ chỉnh)
+    object-fit: cover;
+    border-top-left-radius: 16px;   // 👈 bo góc bên trái
+    border-bottom-left-radius: 16px;
+    flex-shrink: 0;
+  }
+
+  .blog-content {
+     flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 10px;
+
+      .blog-category {
+        // font-weight: bold;
+        // text-transform: uppercase;
+      }
+    }
+
+    .blog-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 22px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      .blog-icon {
+        font-size: 22px;
+        color: linear-gradient(180deg, #f9fbfd, #eef6fb);
+      }
+    }
+
+    .content-wrapper {
+      overflow: hidden;
+      transition: max-height 0.6s ease;
+      margin-bottom: 16px;
+
+      .content-inner {
+        white-space: pre-line;
+        line-height: 1.6;
+        color: #555;
+        
+      }
+    }
+    .blog-footer {
+      margin-top: auto;
+      display: flex;
+      
+    }
+  }
+}
+ .blog-item img {
+  height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 12px;
+    width: 100%;
+    object-fit: contain;
+}
+/* Mobile responsive: ảnh trên, chữ dưới */
+@media (max-width: 768px) {
+  .blog-item {
+    flex-direction: column;
+
+    .blog-thumb {
+      width: 100%;
+      height: auto;
+      max-height: 200px; // 👈 ảnh nhỏ gọn cho mobile
+      border-radius: 16px 16px 0 0; // 👈 bo góc trên
+    }
+
+    .blog-content {
+      padding: 16px;
+    }
+  }
+}
+.blog-footer {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 15px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .blog-stats {
+    font-size: 14px;
+    color: #555;
+
+    span {
+      margin-right: 15px;
+    }
+  }
+
+  .blog-actions {
+    .like-btn {
+      border: none;
+      background: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #e63946; // đỏ mặc định
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &.liked {
+        color: #e63946; // trái tim đỏ
+      }
+    }
+  }
+}

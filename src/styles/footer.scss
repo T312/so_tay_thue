@@ -1,0 +1,123 @@
+// .footer {
+//   text-align: center;
+//   padding: 20px;
+//     background: linear-gradient(180deg,#edf6fc, #f9fbfd);
+//   color: #123c69
+// }
+.footer {
+  background: #fff;
+  padding: 30px 20px;
+  border-top: 1px solid #eee;
+  position: relative;
+    
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .footer-logo {
+        height: 40px;
+      }
+
+      .footer-nav {
+        display: flex;
+        gap: 20px;
+
+        a {
+          font-weight: bold;
+          text-decoration: none;
+          color: #000;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .footer-right {
+      display: flex;
+       /* 👈 sắp xếp span và apps theo cột */
+    align-items: flex-end;    /* 👈 căn sang phải (giữ giống Spiderum) */
+    gap: 10px;
+
+      span {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+        font-size: 14px;
+      }
+
+      .footer-apps {
+        display: flex;
+        gap: 10px;
+
+        img {
+          height: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #eee;
+  }
+
+  /* Back to top button */
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25507e;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    
+
+    &:hover {
+      background: #043f7e;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    text-align: left !important;
+  }
+}

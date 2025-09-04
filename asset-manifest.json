@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/so_tay_thue/static/css/main.d70e84e0.css",
+    "main.js": "/so_tay_thue/static/js/main.25da0516.js",
+    "static/media/logo.png": "/so_tay_thue/static/media/logo.f16227bcf9a1d7853b57.png",
+    "static/media/appstore.jpg": "/so_tay_thue/static/media/appstore.52265356c8510938db83.jpg",
+    "static/media/chplay.png": "/so_tay_thue/static/media/chplay.7ecbceff13c8c7c751d7.png",
+    "index.html": "/so_tay_thue/index.html",
+    "main.d70e84e0.css.map": "/so_tay_thue/static/css/main.d70e84e0.css.map",
+    "main.25da0516.js.map": "/so_tay_thue/static/js/main.25da0516.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d70e84e0.css",
+    "static/js/main.25da0516.js"
+  ]
+}

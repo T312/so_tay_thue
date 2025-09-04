@@ -4,7 +4,7 @@ import heroImg from "../assets/logo.png"; // ảnh nhân vật
 
 const Hero = () => {
   const handleDownload = async () => {
-    window.open(`${process.env.PUBLIC_URL}/so-tay-huong-dan.pdf`, "_blank");
+    window.open(`${process.env.PUBLIC_URL}/ebookthue.pdf`, "_blank");
 
     // tab hiện tại quay về trang chủ
     window.location.href = "/";

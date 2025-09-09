@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-contact">
-          <p><strong>Liên hệ Fanpages</strong></p>
+          <p><strong>Liên hệ Fanpage</strong></p>
           <a 
             href="https://www.facebook.com/profile.php?id=61578685103327" 
             target="_blank" 
@@ -63,12 +63,12 @@ const Footer = () => {
             > <p>Facebook: Thuế cơ sở 3 tỉnh Lâm Đồng</p></a>
           
           <p>Điện thoại: (+84) 2633 843 110</p>
+          <p>Email: tonvdtpc@gmail.com</p>
+          <p>Số 368 Quốc lộ 20, xã Đức Trọng, tỉnh Lâm Đồng</p>
         </div>
 
         <div className="footer-copyright">
-          <p>Email: tonvdtpc@gmail.com</p>
-          <p>Điện thoại: (+84) 2633 843 110</p>
-          <p>Số 368 Quốc lộ 20, xã Đức Trọng, tỉnh Lâm Đồng</p>
+          
         </div>
       </div>
 
